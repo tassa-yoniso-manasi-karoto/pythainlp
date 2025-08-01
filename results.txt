@@ -1,0 +1,1191 @@
+docker run -v ${PWD}:/workspace pythainlp python /workspace/test_tokenize.py
+================================================================================
+PyThaiNLP Tokenization Benchmark
+================================================================================
+Date/Time: 2025-08-01 13:36:53
+Platform: Linux 6.6.87.2-microsoft-standard-WSL2
+Machine: x86_64
+Processor:
+Python: 3.12.11
+PyThaiNLP: 5.1.0
+Testing engines: newmm, longest, icu, attacut, deepcut
+================================================================================
+
+
+WARNING: deepcut engine may cause crashes or hangs.
+If the benchmark freezes, press Ctrl+C and comment out 'deepcut' from ENGINES list.
+
+
+============================================================
+Testing Engine: newmm
+============================================================
+Warming up newmm... done
+
+Testing news_short (236 chars)... done (10 runs)
+  Tokens: 45
+  Time: 0.18ms (±0.04ms)
+  Speed: 1278491 chars/sec
+
+Testing academic (296 chars)... done (10 runs)
+  Tokens: 56
+  Time: 0.22ms (±0.05ms)
+  Speed: 1317539 chars/sec
+
+Testing mixed_content (249 chars)... done (10 runs)
+  Tokens: 71
+  Time: 0.17ms (±0.02ms)
+  Speed: 1453597 chars/sec
+
+Testing literary (284 chars)... done (10 runs)
+  Tokens: 59
+  Time: 0.21ms (±0.03ms)
+  Speed: 1344229 chars/sec
+
+Testing technical (398 chars)... done (10 runs)
+  Tokens: 85
+  Time: 0.28ms (±0.04ms)
+  Speed: 1412420 chars/sec
+
+Testing informal (159 chars)... done (10 runs)
+  Tokens: 52
+  Time: 0.12ms (±0.02ms)
+  Speed: 1371174 chars/sec
+
+Testing poem (101 chars)... done (10 runs)
+  Tokens: 36
+  Time: 0.08ms (±0.02ms)
+  Speed: 1220531 chars/sec
+
+Testing long_complex (576 chars)... done (10 runs)
+  Tokens: 111
+  Time: 0.43ms (±0.04ms)
+  Speed: 1350103 chars/sec
+
+============================================================
+Testing Engine: longest
+============================================================
+Warming up longest... done
+
+Testing news_short (236 chars)... done (10 runs)
+  Tokens: 46
+  Time: 1.21ms (±0.35ms)
+  Speed: 195095 chars/sec
+
+Testing academic (296 chars)... done (10 runs)
+  Tokens: 56
+  Time: 1.70ms (±0.06ms)
+  Speed: 174458 chars/sec
+
+Testing mixed_content (249 chars)... done (10 runs)
+  Tokens: 71
+  Time: 1.22ms (±0.03ms)
+  Speed: 203919 chars/sec
+
+Testing literary (284 chars)... done (10 runs)
+  Tokens: 59
+  Time: 1.55ms (±0.04ms)
+  Speed: 182788 chars/sec
+
+Testing technical (398 chars)... done (10 runs)
+  Tokens: 85
+  Time: 3.30ms (±0.14ms)
+  Speed: 120425 chars/sec
+
+Testing informal (159 chars)... done (10 runs)
+  Tokens: 50
+  Time: 0.51ms (±0.01ms)
+  Speed: 313785 chars/sec
+
+Testing poem (101 chars)... done (10 runs)
+  Tokens: 36
+  Time: 0.27ms (±0.01ms)
+  Speed: 373284 chars/sec
+
+Testing long_complex (576 chars)... done (10 runs)
+  Tokens: 111
+  Time: 6.89ms (±0.09ms)
+  Speed: 83598 chars/sec
+
+============================================================
+Testing Engine: icu
+============================================================
+Warming up icu... done
+
+Testing news_short (236 chars)... done (10 runs)
+  Tokens: 64
+  Time: 0.02ms (±0.00ms)
+  Speed: 11656221 chars/sec
+
+Testing academic (296 chars)... done (10 runs)
+  Tokens: 75
+  Time: 0.02ms (±0.00ms)
+  Speed: 12386751 chars/sec
+
+Testing mixed_content (249 chars)... done (10 runs)
+  Tokens: 79
+  Time: 0.03ms (±0.01ms)
+  Speed: 9122951 chars/sec
+
+Testing literary (284 chars)... done (10 runs)
+  Tokens: 78
+  Time: 0.02ms (±0.00ms)
+  Speed: 12388060 chars/sec
+
+Testing technical (398 chars)... done (10 runs)
+  Tokens: 101
+  Time: 0.04ms (±0.03ms)
+  Speed: 9691621 chars/sec
+
+Testing informal (159 chars)... done (10 runs)
+  Tokens: 57
+  Time: 0.02ms (±0.00ms)
+  Speed: 10006230 chars/sec
+
+Testing poem (101 chars)... done (10 runs)
+  Tokens: 37
+  Time: 0.01ms (±0.01ms)
+  Speed: 8641194 chars/sec
+
+Testing long_complex (576 chars)... done (10 runs)
+  Tokens: 159
+  Time: 0.05ms (±0.01ms)
+  Speed: 12373978 chars/sec
+
+============================================================
+Testing Engine: attacut
+============================================================
+Warming up attacut... done
+
+Testing news_short (236 chars)... done (10 runs)
+  Tokens: 59
+  Time: 25.59ms (±10.86ms)
+  Speed: 9221 chars/sec
+
+Testing academic (296 chars)... done (10 runs)
+  Tokens: 74
+  Time: 26.87ms (±10.07ms)
+  Speed: 11014 chars/sec
+
+Testing mixed_content (249 chars)... done (10 runs)
+  Tokens: 76
+  Time: 22.12ms (±4.40ms)
+  Speed: 11258 chars/sec
+
+Testing literary (284 chars)... done (10 runs)
+  Tokens: 74
+  Time: 20.90ms (±11.11ms)
+  Speed: 13587 chars/sec
+
+Testing technical (398 chars)... done (10 runs)
+  Tokens: 93
+  Time: 14.19ms (±7.38ms)
+  Speed: 28038 chars/sec
+
+Testing informal (159 chars)... done (10 runs)
+  Tokens: 54
+  Time: 13.95ms (±6.94ms)
+  Speed: 11400 chars/sec
+
+Testing poem (101 chars)... done (10 runs)
+  Tokens: 36
+  Time: 7.36ms (±6.97ms)
+  Speed: 13715 chars/sec
+
+Testing long_complex (576 chars)... done (10 runs)
+  Tokens: 140
+  Time: 31.98ms (±29.32ms)
+  Speed: 18012 chars/sec
+
+============================================================
+Testing Engine: deepcut
+============================================================
+Warming up deepcut...2025-08-01 13:36:58.541731: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-08-01 13:36:58.785541: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1754055418.868409       1 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1754055418.891022       1 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1754055419.071037       1 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1754055419.071076       1 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1754055419.071079       1 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1754055419.071081       1 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-08-01 13:36:59.090003: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI AVX_VNNI_INT8 AVX_NE_CONVERT FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/opt/venv/lib/python3.12/site-packages/keras/src/layers/core/embedding.py:97: UserWarning: Argument `input_length` is deprecated. Just remove it.
+  warnings.warn(
+2025-08-01 13:37:02.635270: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+/opt/venv/lib/python3.12/site-packages/keras/src/layers/core/dense.py:92: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 1s 656ms/step
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 20ms/step
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 20ms/step
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 20ms/step
+ done
+
+8/8 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+ done (10 runs)
+  Tokens: 59
+  Time: 115.93ms (±184.23ms)
+  Speed: 2036 chars/sec
+
+10/10 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+10/10 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+10/10 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+10/10 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+10/10 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+10/10 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+10/10 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+10/10 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+10/10 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+10/10 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+ done (10 runs)
+  Tokens: 75
+  Time: 59.75ms (±3.36ms)
+  Speed: 4954 chars/sec
+
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+ done (10 runs)
+  Tokens: 75
+  Time: 55.54ms (±2.46ms)
+  Speed: 4483 chars/sec
+
+9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+ done (10 runs)
+  Tokens: 74
+  Time: 57.98ms (±2.48ms)
+  Speed: 4898 chars/sec
+
+13/13 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+13/13 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+13/13 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+13/13 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+13/13 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+13/13 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+13/13 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+13/13 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+13/13 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+13/13 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+ done (10 runs)
+  Tokens: 94
+  Time: 68.49ms (±2.45ms)
+  Speed: 5811 chars/sec
+
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step
+ done (10 runs)
+  Tokens: 52
+  Time: 48.76ms (±1.49ms)
+  Speed: 3261 chars/sec
+
+4/4 ━━━━━━━━━━━━━━━━━━━━ 0s 6ms/step
+4/4 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step
+4/4 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step
+4/4 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step
+4/4 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step
+4/4 ━━━━━━━━━━━━━━━━━━━━ 0s 6ms/step
+4/4 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step
+4/4 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step
+4/4 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step
+4/4 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step
+ done (10 runs)
+  Tokens: 35
+  Time: 45.92ms (±2.24ms)
+  Speed: 2200 chars/sec
+
+18/18 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step
+18/18 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+18/18 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+18/18 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step
+18/18 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step
+18/18 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+18/18 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+18/18 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+18/18 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+18/18 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+ done (10 runs)
+  Tokens: 140
+  Time: 75.32ms (±1.23ms)
+  Speed: 7647 chars/sec
+
+================================================================================
+OTHER TOKENIZERS
+================================================================================
+
+Sentence Tokenization:
+  Sentences found: 2
+  Time: 22.15ms
+
+Subword Tokenization:
+  Subwords found: 175
+  Time: 7.04ms
+
+================================================================================
+SUMMARY - Average Processing Time (milliseconds)
+================================================================================
+Engine        news_sho  academic  mixed_co  literary
+----------------------------------------------------
+newmm             0.18      0.22      0.17      0.21
+longest           1.21      1.70      1.22      1.55
+icu               0.02      0.02      0.03      0.02
+attacut          25.59     26.87     22.12     20.90
+deepcut         115.93     59.75     55.54     57.98
+
+================================================================================
+PERFORMANCE RANKING (by average speed)
+================================================================================
+1. icu: 10783376 chars/sec
+2. newmm: 1343510 chars/sec
+3. longest: 205919 chars/sec
+4. attacut: 14531 chars/sec
+5. deepcut: 4411 chars/sec
+
+================================================================================
+GENERAL STATISTICS
+================================================================================
+
+1. OVERALL PERFORMANCE
+----------------------------------------
+Total test runs: 400
+Total characters processed: 114,950
+Total tokens generated: 28,890
+Average time per run: 17.73ms
+Median time per run: 1.23ms
+Std deviation: 39.23ms
+Fastest run: 0.01ms
+Slowest run: 640.23ms
+Overall throughput: 16208 chars/sec
+
+2. PER-ENGINE STATISTICS
+----------------------------------------
+Engine         Runs    Avg(ms)    Med(ms)    Min(ms)    Max(ms)
+------------------------------------------------------------
+attacut          80      20.37      19.70       1.04     110.49
+deepcut          80      65.96      57.29      43.43     640.23
+icu              80       0.03       0.02       0.01       0.12
+longest          80       2.08       1.49       0.26       7.11
+newmm            80       0.21       0.19       0.07       0.53
+
+3. PER-TEXT-TYPE STATISTICS
+----------------------------------------
+Text Type          Chars    Avg(ms)    Chars/sec
+--------------------------------------------------
+news_short           236      28.59         8255
+academic             296      17.71        16711
+mixed_content        249      15.82        15744
+literary             284      16.13        17603
+technical            398      17.26        23055
+informal             159      12.67        12550
+poem                 101      10.73         9414
+long_complex         576      22.93        25116
+
+4. BEST AND WORST PERFORMERS
+----------------------------------------
+news_short:
+  Best: icu (0.02ms)
+  Worst: deepcut (115.93ms)
+  Difference: 572484.7% slower
+academic:
+  Best: icu (0.02ms)
+  Worst: deepcut (59.75ms)
+  Difference: 249921.2% slower
+mixed_content:
+  Best: icu (0.03ms)
+  Worst: deepcut (55.54ms)
+  Difference: 203399.9% slower
+literary:
+  Best: icu (0.02ms)
+  Worst: deepcut (57.98ms)
+  Difference: 252801.9% slower
+technical:
+  Best: icu (0.04ms)
+  Worst: deepcut (68.49ms)
+  Difference: 166682.6% slower
+informal:
+  Best: icu (0.02ms)
+  Worst: deepcut (48.76ms)
+  Difference: 306765.1% slower
+poem:
+  Best: icu (0.01ms)
+  Worst: deepcut (45.92ms)
+  Difference: 392748.3% slower
+long_complex:
+  Best: icu (0.05ms)
+  Worst: deepcut (75.32ms)
+  Difference: 161715.5% slower
+
+Running accuracy evaluation...
+
+================================================================================
+ACCURACY EVALUATION (vs Claude Reference)
+================================================================================
+
+NEWMM Engine:
+----------------------------------------
+
+news_short:
+  Tokens: 45 (ref: 51)
+  Precision: 0.833
+  Recall: 0.761
+  F1 Score: 0.795
+  Position Accuracy: 0.627
+  Text Preserved: ✗
+
+academic:
+  Tokens: 56 (ref: 61)
+  Precision: 0.756
+  Recall: 0.705
+  F1 Score: 0.729
+  Position Accuracy: 0.098
+  Text Preserved: ✗
+
+mixed_content:
+  Tokens: 71 (ref: 51)
+  Precision: 0.913
+  Recall: 0.894
+  F1 Score: 0.903
+  Position Accuracy: 0.634
+  Text Preserved: ✗
+
+literary:
+  Tokens: 59 (ref: 59)
+  Precision: 0.824
+  Recall: 0.792
+  F1 Score: 0.808
+  Position Accuracy: 0.797
+  Text Preserved: ✗
+
+technical:
+  Tokens: 85 (ref: 80)
+  Precision: 0.692
+  Recall: 0.763
+  F1 Score: 0.726
+  Position Accuracy: 0.224
+  Text Preserved: ✗
+
+informal:
+  Tokens: 52 (ref: 45)
+  Precision: 0.861
+  Recall: 0.838
+  F1 Score: 0.849
+  Position Accuracy: 0.692
+  Text Preserved: ✗
+
+poem:
+  Tokens: 36 (ref: 30)
+  Precision: 0.808
+  Recall: 0.840
+  F1 Score: 0.824
+  Position Accuracy: 0.500
+  Text Preserved: ✗
+
+long_complex:
+  Tokens: 111 (ref: 106)
+  Precision: 0.779
+  Recall: 0.779
+  F1 Score: 0.779
+  Position Accuracy: 0.604
+  Text Preserved: ✗
+
+Average F1 Score: 0.802
+
+LONGEST Engine:
+----------------------------------------
+
+news_short:
+  Tokens: 46 (ref: 51)
+  Precision: 0.791
+  Recall: 0.739
+  F1 Score: 0.764
+  Position Accuracy: 0.608
+  Text Preserved: ✗
+
+academic:
+  Tokens: 56 (ref: 61)
+  Precision: 0.756
+  Recall: 0.705
+  F1 Score: 0.729
+  Position Accuracy: 0.098
+  Text Preserved: ✗
+
+mixed_content:
+  Tokens: 71 (ref: 51)
+  Precision: 0.783
+  Recall: 0.766
+  F1 Score: 0.774
+  Position Accuracy: 0.014
+  Text Preserved: ✗
+
+literary:
+  Tokens: 59 (ref: 59)
+  Precision: 0.843
+  Recall: 0.811
+  F1 Score: 0.827
+  Position Accuracy: 0.831
+  Text Preserved: ✗
+
+technical:
+  Tokens: 85 (ref: 80)
+  Precision: 0.662
+  Recall: 0.729
+  F1 Score: 0.694
+  Position Accuracy: 0.224
+  Text Preserved: ✗
+
+informal:
+  Tokens: 50 (ref: 45)
+  Precision: 0.842
+  Recall: 0.865
+  F1 Score: 0.853
+  Position Accuracy: 0.720
+  Text Preserved: ✗
+
+poem:
+  Tokens: 36 (ref: 30)
+  Precision: 0.808
+  Recall: 0.840
+  F1 Score: 0.824
+  Position Accuracy: 0.500
+  Text Preserved: ✗
+
+long_complex:
+  Tokens: 111 (ref: 106)
+  Precision: 0.809
+  Recall: 0.809
+  F1 Score: 0.809
+  Position Accuracy: 0.595
+  Text Preserved: ✗
+
+Average F1 Score: 0.784
+
+ICU Engine:
+----------------------------------------
+
+news_short:
+  Tokens: 64 (ref: 51)
+  Precision: 0.717
+  Recall: 0.826
+  F1 Score: 0.768
+  Position Accuracy: 0.203
+  Text Preserved: ✗
+
+academic:
+  Tokens: 75 (ref: 61)
+  Precision: 0.577
+  Recall: 0.682
+  F1 Score: 0.625
+  Position Accuracy: 0.173
+  Text Preserved: ✗
+
+mixed_content:
+  Tokens: 79 (ref: 51)
+  Precision: 0.792
+  Recall: 0.894
+  F1 Score: 0.840
+  Position Accuracy: 0.228
+  Text Preserved: ✗
+
+literary:
+  Tokens: 78 (ref: 59)
+  Precision: 0.587
+  Recall: 0.698
+  F1 Score: 0.638
+  Position Accuracy: 0.179
+  Text Preserved: ✗
+
+technical:
+  Tokens: 101 (ref: 80)
+  Precision: 0.627
+  Recall: 0.797
+  F1 Score: 0.701
+  Position Accuracy: 0.069
+  Text Preserved: ✗
+
+informal:
+  Tokens: 57 (ref: 45)
+  Precision: 0.825
+  Recall: 0.892
+  F1 Score: 0.857
+  Position Accuracy: 0.684
+  Text Preserved: ✗
+
+poem:
+  Tokens: 37 (ref: 30)
+  Precision: 0.846
+  Recall: 0.880
+  F1 Score: 0.863
+  Position Accuracy: 0.622
+  Text Preserved: ✗
+
+long_complex:
+  Tokens: 159 (ref: 106)
+  Precision: 0.622
+  Recall: 0.750
+  F1 Score: 0.680
+  Position Accuracy: 0.006
+  Text Preserved: ✗
+
+Average F1 Score: 0.746
+
+ATTACUT Engine:
+----------------------------------------
+
+news_short:
+  Tokens: 59 (ref: 51)
+  Precision: 0.816
+  Recall: 0.870
+  F1 Score: 0.842
+  Position Accuracy: 0.220
+  Text Preserved: ✗
+
+academic:
+  Tokens: 74 (ref: 61)
+  Precision: 0.673
+  Recall: 0.750
+  F1 Score: 0.710
+  Position Accuracy: 0.243
+  Text Preserved: ✗
+
+mixed_content:
+  Tokens: 76 (ref: 51)
+  Precision: 0.837
+  Recall: 0.872
+  F1 Score: 0.854
+  Position Accuracy: 0.211
+  Text Preserved: ✗
+
+literary:
+  Tokens: 74 (ref: 59)
+  Precision: 0.615
+  Recall: 0.755
+  F1 Score: 0.678
+  Position Accuracy: 0.270
+  Text Preserved: ✗
+
+technical:
+  Tokens: 93 (ref: 80)
+  Precision: 0.734
+  Recall: 0.797
+  F1 Score: 0.764
+  Position Accuracy: 0.097
+  Text Preserved: ✗
+
+informal:
+  Tokens: 54 (ref: 45)
+  Precision: 0.872
+  Recall: 0.919
+  F1 Score: 0.895
+  Position Accuracy: 0.741
+  Text Preserved: ✗
+
+poem:
+  Tokens: 36 (ref: 30)
+  Precision: 0.731
+  Recall: 0.760
+  F1 Score: 0.745
+  Position Accuracy: 0.472
+  Text Preserved: ✗
+
+long_complex:
+  Tokens: 140 (ref: 106)
+  Precision: 0.699
+  Recall: 0.750
+  F1 Score: 0.723
+  Position Accuracy: 0.057
+  Text Preserved: ✗
+
+Average F1 Score: 0.776
+
+DEEPCUT Engine:
+----------------------------------------
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+
+news_short:
+  Tokens: 59 (ref: 51)
+  Precision: 0.816
+  Recall: 0.870
+  F1 Score: 0.842
+  Position Accuracy: 0.220
+  Text Preserved: ✗
+10/10 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+
+academic:
+  Tokens: 75 (ref: 61)
+  Precision: 0.700
+  Recall: 0.795
+  F1 Score: 0.745
+  Position Accuracy: 0.240
+  Text Preserved: ✗
+8/8 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+
+mixed_content:
+  Tokens: 75 (ref: 51)
+  Precision: 0.760
+  Recall: 0.809
+  F1 Score: 0.784
+  Position Accuracy: 0.187
+  Text Preserved: ✗
+9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+
+literary:
+  Tokens: 74 (ref: 59)
+  Precision: 0.615
+  Recall: 0.755
+  F1 Score: 0.678
+  Position Accuracy: 0.189
+  Text Preserved: ✗
+13/13 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+
+technical:
+  Tokens: 94 (ref: 80)
+  Precision: 0.800
+  Recall: 0.881
+  F1 Score: 0.839
+  Position Accuracy: 0.096
+  Text Preserved: ✗
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step
+
+informal:
+  Tokens: 52 (ref: 45)
+  Precision: 0.825
+  Recall: 0.892
+  F1 Score: 0.857
+  Position Accuracy: 0.712
+  Text Preserved: ✗
+4/4 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step
+
+poem:
+  Tokens: 35 (ref: 30)
+  Precision: 0.704
+  Recall: 0.760
+  F1 Score: 0.731
+  Position Accuracy: 0.457
+  Text Preserved: ✗
+18/18 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step
+
+long_complex:
+  Tokens: 140 (ref: 106)
+  Precision: 0.699
+  Recall: 0.750
+  F1 Score: 0.723
+  Position Accuracy: 0.057
+  Text Preserved: ✗
+
+Average F1 Score: 0.775
+
+================================================================================
+ACCURACY RANKING (by average F1 score)
+================================================================================
+1. newmm: 0.802
+2. longest: 0.784
+3. attacut: 0.776
+4. deepcut: 0.775
+5. icu: 0.746
+
+Evaluating LLM tokenizations...
+
+================================================================================
+LLM TOKENIZATION EVALUATION (vs Claude Reference)
+================================================================================
+
+QWEN3_4B LLM:
+----------------------------------------
+
+news_short:
+  Tokens: 51 (ref: 51)
+  Precision: 0.886
+  Recall: 0.848
+  F1 Score: 0.867
+  Position Accuracy: 0.725
+  Text Preserved: ✓
+
+academic:
+  Tokens: 63 (ref: 61)
+  Precision: 0.723
+  Recall: 0.773
+  F1 Score: 0.747
+  Position Accuracy: 0.222
+  Text Preserved: ✓
+
+mixed_content:
+  Tokens: 48 (ref: 51)
+  Precision: 0.867
+  Recall: 0.830
+  F1 Score: 0.848
+  Position Accuracy: 0.824
+  Text Preserved: ✗
+
+literary:
+  Tokens: 71 (ref: 59)
+  Precision: 0.695
+  Recall: 0.774
+  F1 Score: 0.732
+  Position Accuracy: 0.183
+  Text Preserved: ✓
+
+technical:
+  Tokens: 77 (ref: 80)
+  Precision: 0.847
+  Recall: 0.847
+  F1 Score: 0.847
+  Position Accuracy: 0.850
+  Text Preserved: ✓
+
+informal:
+  Tokens: 34 (ref: 45)
+  Precision: 0.742
+  Recall: 0.622
+  F1 Score: 0.676
+  Position Accuracy: 0.133
+  Text Preserved: ✓
+
+poem:
+  Tokens: 30 (ref: 30)
+  Precision: 0.885
+  Recall: 0.920
+  F1 Score: 0.902
+  Position Accuracy: 0.900
+  Text Preserved: ✓
+
+long_complex:
+  Tokens: 100 (ref: 106)
+  Precision: 0.818
+  Recall: 0.794
+  F1 Score: 0.806
+  Position Accuracy: 0.057
+  Text Preserved: ✓
+
+Average F1 Score: 0.803
+
+GEMMA3N_E2B LLM:
+----------------------------------------
+
+news_short:
+  Tokens: 25 (ref: 51)
+  Precision: 0.333
+  Recall: 0.174
+  F1 Score: 0.229
+  Position Accuracy: 0.039
+  Text Preserved: ✓
+
+academic:
+  Tokens: 27 (ref: 61)
+  Precision: 0.400
+  Recall: 0.227
+  F1 Score: 0.290
+  Position Accuracy: 0.000
+  Text Preserved: ✓
+
+mixed_content:
+  Tokens: 33 (ref: 51)
+  Precision: 0.656
+  Recall: 0.447
+  F1 Score: 0.532
+  Position Accuracy: 0.098
+  Text Preserved: ✓
+
+literary:
+  Tokens: 11 (ref: 59)
+  Precision: 0.091
+  Recall: 0.019
+  F1 Score: 0.031
+  Position Accuracy: 0.017
+  Text Preserved: ✓
+
+technical:
+  Tokens: 23 (ref: 80)
+  Precision: 0.130
+  Recall: 0.051
+  F1 Score: 0.073
+  Position Accuracy: 0.000
+  Text Preserved: ✗
+
+informal:
+  Tokens: 8 (ref: 45)
+  Precision: 0.000
+  Recall: 0.000
+  F1 Score: 0.000
+  Position Accuracy: 0.000
+  Text Preserved: ✗
+
+poem:
+  Tokens: 9 (ref: 30)
+  Precision: 0.111
+  Recall: 0.040
+  F1 Score: 0.059
+  Position Accuracy: 0.000
+  Text Preserved: ✓
+
+long_complex:
+  Tokens: 32 (ref: 106)
+  Precision: 0.188
+  Recall: 0.088
+  F1 Score: 0.120
+  Position Accuracy: 0.000
+  Text Preserved: ✗
+
+Average F1 Score: 0.167
+
+GEMMI25_PRO LLM:
+----------------------------------------
+
+news_short:
+  Tokens: 47 (ref: 51)
+  Precision: 0.929
+  Recall: 0.848
+  F1 Score: 0.886
+  Position Accuracy: 0.314
+  Text Preserved: ✓
+
+academic:
+  Tokens: 59 (ref: 61)
+  Precision: 0.886
+  Recall: 0.886
+  F1 Score: 0.886
+  Position Accuracy: 0.885
+  Text Preserved: ✓
+
+mixed_content:
+  Tokens: 70 (ref: 51)
+  Precision: 0.889
+  Recall: 0.851
+  F1 Score: 0.870
+  Position Accuracy: 0.614
+  Text Preserved: ✗
+
+literary:
+  Tokens: 61 (ref: 59)
+  Precision: 0.904
+  Recall: 0.887
+  F1 Score: 0.895
+  Position Accuracy: 0.869
+  Text Preserved: ✗
+
+technical:
+  Tokens: 84 (ref: 80)
+  Precision: 0.951
+  Recall: 0.983
+  F1 Score: 0.967
+  Position Accuracy: 0.869
+  Text Preserved: ✗
+
+informal:
+  Tokens: 48 (ref: 45)
+  Precision: 0.778
+  Recall: 0.757
+  F1 Score: 0.767
+  Position Accuracy: 0.562
+  Text Preserved: ✗
+
+poem:
+  Tokens: 37 (ref: 30)
+  Precision: 0.741
+  Recall: 0.800
+  F1 Score: 0.769
+  Position Accuracy: 0.486
+  Text Preserved: ✗
+
+long_complex:
+  Tokens: 119 (ref: 106)
+  Precision: 0.909
+  Recall: 0.882
+  F1 Score: 0.896
+  Position Accuracy: 0.092
+  Text Preserved: ✗
+
+Average F1 Score: 0.867
+
+GEMMI25_FLASHLIGHT LLM:
+----------------------------------------
+
+news_short:
+  Tokens: 48 (ref: 51)
+  Precision: 0.953
+  Recall: 0.891
+  F1 Score: 0.921
+  Position Accuracy: 0.314
+  Text Preserved: ✓
+
+academic:
+  Tokens: 56 (ref: 61)
+  Precision: 0.878
+  Recall: 0.818
+  F1 Score: 0.847
+  Position Accuracy: 0.836
+  Text Preserved: ✓
+
+mixed_content:
+  Tokens: 47 (ref: 51)
+  Precision: 0.909
+  Recall: 0.851
+  F1 Score: 0.879
+  Position Accuracy: 0.843
+  Text Preserved: ✓
+
+literary:
+  Tokens: 55 (ref: 59)
+  Precision: 0.875
+  Recall: 0.792
+  F1 Score: 0.832
+  Position Accuracy: 0.814
+  Text Preserved: ✓
+
+technical:
+  Tokens: 79 (ref: 80)
+  Precision: 0.914
+  Recall: 0.898
+  F1 Score: 0.906
+  Position Accuracy: 0.925
+  Text Preserved: ✗
+
+informal:
+  Tokens: 39 (ref: 45)
+  Precision: 0.886
+  Recall: 0.838
+  F1 Score: 0.861
+  Position Accuracy: 0.356
+  Text Preserved: ✓
+
+poem:
+  Tokens: 25 (ref: 30)
+  Precision: 0.739
+  Recall: 0.680
+  F1 Score: 0.708
+  Position Accuracy: 0.633
+  Text Preserved: ✗
+
+long_complex:
+  Tokens: 98 (ref: 106)
+  Precision: 0.909
+  Recall: 0.882
+  F1 Score: 0.896
+  Position Accuracy: 0.066
+  Text Preserved: ✗
+
+Average F1 Score: 0.856
+
+GPT4.1 LLM:
+----------------------------------------
+
+news_short:
+  Tokens: 46 (ref: 51)
+  Precision: 0.902
+  Recall: 0.804
+  F1 Score: 0.851
+  Position Accuracy: 0.314
+  Text Preserved: ✓
+
+academic:
+  Tokens: 53 (ref: 61)
+  Precision: 0.833
+  Recall: 0.795
+  F1 Score: 0.814
+  Position Accuracy: 0.426
+  Text Preserved: ✓
+
+mixed_content:
+  Tokens: 43 (ref: 51)
+  Precision: 0.800
+  Recall: 0.681
+  F1 Score: 0.736
+  Position Accuracy: 0.686
+  Text Preserved: ✓
+
+literary:
+  Tokens: 57 (ref: 59)
+  Precision: 0.939
+  Recall: 0.868
+  F1 Score: 0.902
+  Position Accuracy: 0.881
+  Text Preserved: ✓
+
+technical:
+  Tokens: 67 (ref: 80)
+  Precision: 0.818
+  Recall: 0.763
+  F1 Score: 0.789
+  Position Accuracy: 0.000
+  Text Preserved: ✓
+
+informal:
+  Tokens: 37 (ref: 45)
+  Precision: 0.848
+  Recall: 0.757
+  F1 Score: 0.800
+  Position Accuracy: 0.178
+  Text Preserved: ✓
+
+poem:
+  Tokens: 24 (ref: 30)
+  Precision: 0.714
+  Recall: 0.600
+  F1 Score: 0.652
+  Position Accuracy: 0.000
+  Text Preserved: ✓
+
+long_complex:
+  Tokens: 87 (ref: 106)
+  Precision: 0.810
+  Recall: 0.750
+  F1 Score: 0.779
+  Position Accuracy: 0.075
+  Text Preserved: ✓
+
+Average F1 Score: 0.790
+
+================================================================================
+COMBINED ACCURACY RANKING (All Tokenizers vs Claude Reference)
+================================================================================
+
+Rank   Tokenizer                 Avg F1 Score
+---------------------------------------------
+1      gemmi25_pro (LLM)         0.867
+2      gemmi25_flashlight (LLM)  0.856
+3      qwen3_4b (LLM)            0.803
+4      newmm (engine)            0.802
+5      gpt4.1 (LLM)              0.790
+6      longest (engine)          0.784
+7      attacut (engine)          0.776
+8      deepcut (engine)          0.775
+9      icu (engine)              0.746
+10     gemma3n_e2b (LLM)         0.167
+
+---------------------------------------------
+Average F1 for PyThaiNLP engines: 0.777
+Average F1 for LLMs: 0.697
+
+Benchmark completed!
